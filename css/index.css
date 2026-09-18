@@ -645,8 +645,6 @@ p {
   /* HEADER */
   .navbar {
     min-height: 76px;
-    display: flex;
-    justify-content: space-between;
   }
 
   .main-nav,
@@ -668,7 +666,7 @@ p {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-
+  
   .hero-image-wrapper {
     height: 500px;
   }
