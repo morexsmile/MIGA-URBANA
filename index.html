@@ -2,121 +2,35 @@
 <html lang="es">
 
 <head>
-  <!-- META INFORMACIÓN -->
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Miga Urbana, panadería vegana de barrio en Málaga. Pan artesanal, bollería vegetal, café y mucho carácter.">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Miga Urbana">
+  <meta name="theme-color" content="#294028">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
-  <meta
-    name="description"
-    content="Descubre Miga Urbana, una panadería vegana de barrio con pan artesanal, bollería vegetal, café y mucho carácter.">
-
-  <meta
-    name="author"
-    content="Miga Urbana">
-
-  <meta
-    name="theme-color"
-    content="#263B2D">
-
-  <!-- FAVICON -->
-  <link
-    rel="icon"
-    type="image/x-icon"
-    href="assets/favicon.ico">
-
-  <!-- CSS -->
-  <link
-    rel="stylesheet"
-    href="css/index.css">
-
-  <!-- GOOGLE FONTS -->
+  <!-- FUENTES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
-    rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/index.css">
 
-  <!-- JAVASCRIPT -->
-  <script
-    src="js/index.js"
-    defer>
-</script>
-
-  <!-- PRIMARY META TAGS -->
+  <!-- JS -->
+  <script src="js/index.js" defer></script>
   <title>Miga Urbana | Panadería vegana de barrio</title>
-
-  <meta
-    name="title"
-    content="Miga Urbana | Panadería vegana de barrio">
-
-  <meta
-    name="description"
-    content="Pan artesanal, bollería vegetal, café y mucho carácter. Descubre Miga Urbana.">
-
-  <!-- OPEN GRAPH / FACEBOOK / WHATSAPP / LINKEDIN -->
-  <meta
-    property="og:type"
-    content="website">
-
-  <meta
-    property="og:url"
-    content="https://tudominio.com/">
-
-  <meta
-    property="og:site_name"
-    content="Miga Urbana">
-
-  <meta
-    property="og:title"
-    content="Miga Urbana | Panadería vegana de barrio">
-
-  <meta
-    property="og:description"
-    content="Pan artesanal, bollería vegetal, café y mucho carácter. Descubre Miga Urbana.">
-
-  <meta
-    property="og:image"
-    content="https://tudominio.com/assets/meta-miga-urbana.jpg">
-
-  <!-- TWITTER / X -->
-  <meta
-    name="twitter:card"
-    content="summary_large_image">
-
-  <meta
-    name="twitter:url"
-    content="https://tudominio.com/">
-
-  <meta
-    name="twitter:title"
-    content="Miga Urbana | Panadería vegana de barrio">
-
-  <meta
-    name="twitter:description"
-    content="Pan artesanal, bollería vegetal, café y mucho carácter. Descubre Miga Urbana.">
-
-  <meta
-    name="twitter:image"
-    content="https://tudominio.com/assets/meta-miga-urbana.jpg">
 </head>
 
 <body>
   <!-- HEADER -->
+
   <header class="site-header">
-    <nav
-      class="navbar container"
-      aria-label="Navegación principal">
+    <div class="navbar container">
 
       <!-- LOGO -->
-      <a
-        class="logo"
-        href="/"
-        aria-label="Miga Urbana, página de inicio">
-
+      <a class="logo" href="#inicio" aria-label="Miga Urbana, inicio">
         <img
           class="logo-image"
           src="assets/logo.svg"
@@ -125,122 +39,96 @@
           height="40">
 
         <span class="logo-text">
-          MIGA<br>
-          URBANA
+          MIGA URBANA
         </span>
-
       </a>
 
-      <!-- NAVEGACIÓN DESKTOP -->
-      <ul class="nav-list">
+      <!-- NAVEGACIÓN -->
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li>
+            <a href="#productos">Productos</a>
+          </li>
 
-        <li>
-          <a href="#productos">
-            Lo que sale
-          </a>
-        </li>
+          <li>
+            <a href="#historia">Nuestra historia</a>
+          </li>
 
-        <li>
-          <a href="#historia">
-            Nuestra historia
-          </a>
-        </li>
-      </ul>
+          <li>
+            <a href="#visitanos">Visítanos</a>
+          </li>
+        </ul>
+      </nav>
 
-      <!-- BOTÓN PRINCIPAL -->
-      <a
-        class="button button-primary"
-        href="#visitanos"
-      >
+      <!-- BOTÓN -->
+      <a class="button button-primary" href="#visitanos">
         Ven a vernos
       </a>
-
-      <!-- BOTÓN MENÚ MOBILE -->
+      
+      <!-- MENÚ MÓVIL -->
       <button
         class="menu-toggle"
         type="button"
         aria-label="Abrir menú"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
+        aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
-    </nav>
+    </div>
 
-    <!-- MENÚ MOBILE -->
-    <div
-      class="mobile-menu"
-      id="mobile-menu"
-      hidden>
-      <ul class="mobile-nav-list">
+    <!-- MENÚ MÓVIL -->
+    <div class="mobile-menu" hidden>
+      <nav aria-label="Navegación móvil">
+        <ul class="mobile-nav-list">
+          <li>
+            <a href="#productos">Productos</a>
+          </li>
 
-        <li>
-          <a href="#productos">
-            Lo que sale
-          </a>
-        </li>
+          <li>
+            <a href="#historia">Nuestra historia</a>
+          </li>
 
-        <li>
-          <a href="#historia">
-            Nuestra historia
-          </a>
-        </li>
-
-        <li>
-          <a href="#visitanos">
-            Ven a vernos
-          </a>
-        </li>
-      </ul>
+          <li>
+            <a href="#visitanos">Visítanos</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <main>
+  <main id="inicio">
 
     <!-- HERO -->
-    <section
-      class="hero"
-      aria-labelledby="hero-title">
-
-      <div class="container hero-content">
-
-        <!-- TEXTO DEL HERO -->
+    <section class="hero">
+      <div class="hero-content container">
         <div class="hero-text">
           <p class="eyebrow">
-            Panadería vegetal · Málaga
+            Panadería vegana · Málaga
           </p>
 
-          <h1 id="hero-title">
-            Pan de<br>
+          <h1>
+            Pan<br>
+            de<br>
             barrio.
           </h1>
 
           <p class="hero-description">
-            Masa madre, ingredientes vegetales
-            y mucho carácter.
+            Pan artesanal, bollería vegetal, café y mucho carácter.
           </p>
         </div>
 
-        <!-- IMAGEN DEL HERO -->
         <div class="hero-image-wrapper">
-
           <img
             class="hero-image"
-            src="assets/hero-pan.jpg"
-            alt="Selección de panes y bollería vegetal recién horneados">
-
+            src="assets/images/hero-pan.jpg"
+            alt="Pan artesanal de Miga Urbana">
         </div>
       </div>
     </section>
 
     <!-- MARQUEE -->
-    <div
-      class="marquee"
-      aria-label="Características de Miga Urbana">
-
+    <section class="marquee" aria-label="Características de Miga Urbana">
       <div class="marquee-content">
         <span>Masa madre</span>
         <span>100% vegetal</span>
@@ -249,42 +137,33 @@
         <span>100% vegetal</span>
         <span>Hecho en el barrio</span>
       </div>
-    </div>
+    </section>
 
     <!-- PRODUCTOS -->
-    <section
-      class="products-section"
-      id="productos"
-      aria-labelledby="products-title">
-
+    <section class="products-section" id="productos">
       <div class="container">
-
-        <!-- INTRODUCCIÓN -->
         <div class="section-intro">
-
           <p class="eyebrow">
-            Hoy en el mostrador
+            Lo que sale del horno
           </p>
 
-          <h2 id="products-title">
-            Recién salidos
+          <h2>
+            Productos
           </h2>
         </div>
 
         <div class="products-layout">
 
-          <!-- IMAGEN DE PRODUCTOS -->
+          <!-- FOTO -->
           <div class="products-image-wrapper">
             <img
               class="products-image"
-              src="assets/products.jpg"
-              alt="Panes y productos de bollería recién horneados">
+              src="assets/images/products.jpg"
+              alt="Productos artesanales de Miga Urbana">
           </div>
 
-          <!-- LISTA DE PRODUCTOS -->
+          <!-- PRODUCTOS -->
           <div class="products-list">
-
-            <!-- PRODUCTO 1 -->
             <article class="product-item">
               <div class="product-info">
                 <h3>
@@ -292,19 +171,17 @@
                 </h3>
 
                 <p>
-                  Masa madre · 1 kg
+                  Masa madre · 48h
                 </p>
               </div>
 
-              <p class="product-price">
-                4 €
-              </p>
+              <strong class="product-price">
+                4,50 €
+              </strong>
             </article>
 
-            <!-- PRODUCTO 2 -->
             <article class="product-item">
               <div class="product-info">
-
                 <h3>
                   Croissant vegetal
                 </h3>
@@ -313,16 +190,14 @@
                   Hojaldre · mantequilla vegetal
                 </p>
               </div>
-
-              <p class="product-price">
-                2 €
-              </p>
+              
+              <strong class="product-price">
+                2,80 €
+              </strong>
             </article>
 
-            <!-- PRODUCTO 3 -->
             <article class="product-item">
               <div class="product-info">
-
                 <h3>
                   Focaccia huerta
                 </h3>
@@ -332,177 +207,133 @@
                 </p>
               </div>
 
-              <p class="product-price">
-                3,50 €
-              </p>
+              <strong class="product-price">
+                4,00 €
+              </strong>
             </article>
 
             <p class="products-note">
-              *Elaboramos nuestros productos diariamente.
-              Consulta la disponibilidad en tienda.
+              Elaboramos nuestros productos diariamente. Consulta la disponibilidad en tienda.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- HISTORIA / FILOSOFÍA -->
-    <section
-      class="about-section"
-      id="historia"
-      aria-labelledby="about-title">
-      <div class="container about-layout">
+    <!-- HISTORIA -->
+    <section class="about-section" id="historia">
+      <div class="about-layout container">
 
         <!-- TEXTO -->
         <div class="about-content">
           <p class="eyebrow">
-            Nuestra manera de hacer
+            Nuestra historia
           </p>
-
-          <h2 id="about-title">
+          
+          <h2>
             Sin atajos.<br>
-            <span>Con mucha miga.</span>
+            Con mucha <span>miga.</span>
           </h2>
+
           <p class="about-description">
-            Nos gusta el pan que sabe a pan.
-            Fermentaciones largas, proximidad y
-            recetas totalmente vegetales.
-            Sin cosas raras, solo buena materia
-            prima y mucho oficio.
+            Miga Urbana nace de una idea sencilla: hacer buen pan,
+            hacerlo de forma artesanal y convertir la panadería
+            en un lugar para el barrio.
           </p>
 
           <!-- ESTADÍSTICAS -->
           <div class="about-stats">
             <div class="stat">
               <strong>
-                48H
+                100%
               </strong>
+              <span>
+                Vegetal
+              </span>
+            </div>
 
+            <div class="stat">
+              <strong>
+                24h
+              </strong>
               <span>
                 Fermentación
               </span>
             </div>
-
             <div class="stat">
+
               <strong>
-                0%
+                0
               </strong>
-
               <span>
-                Ingredientes animales
-              </span>
-            </div>
-
-            <div class="stat">
-              <strong>
-                100%
-              </strong>
-
-              <span>
-                Hecho aquí
+                Atajos
               </span>
             </div>
           </div>
         </div>
 
-        <!-- IMAGEN -->
+        <!-- FOTO -->
         <div class="about-image-wrapper">
+
           <img
             class="about-image"
-            src="assets/about-bakery.jpg"
-            alt="Persona preparando masa de pan en una panadería">
+            src="assets/images/about-bakery.jpg"
+            alt="Interior de Miga Urbana">
         </div>
       </div>
     </section>
 
     <!-- VISÍTANOS -->
-    <section
-      class="visit-section"
-      id="visitanos"
-      aria-labelledby="visit-title">
-      <div class="container visit-layout">
 
-        <!-- TEXTO -->
+    <section class="visit-section" id="visitanos">
+      <div class="visit-layout container">
         <div class="visit-content">
           <p class="eyebrow">
-            La mesa está servida
+            Estamos en Málaga
           </p>
 
-          <h2 id="visit-title">
-            Ven por pan.<br>
-            <span>
-              Quédate por<br>
-              el barrio.
-            </span>
+          <h2>
+            Ven.<br>
+            <span>Prueba.</span><br>
+            Repite.
           </h2>
         </div>
 
-        <!-- INFORMACIÓN -->
         <div class="visit-info">
+
           <address>
             Calle Pedro Gómez Chaix, 3<br>
-            Cruz de Humilladero, Málaga<br>
-            España
+            Cruz de Humilladero<br>
+            Málaga
           </address>
 
           <p class="opening-hours">
+            <strong>Horario</strong><br>
             Lunes — Sábado<br>
-            08:00 — 16:00
+            08:00 — 15:00
           </p>
 
           <a
             class="button button-light"
-            href="https://www.google.com/maps/search/?api=1&query=Calle+Pedro+Gómez+Chaix+3+Málaga"
+            href="https://www.google.com/maps/search/?api=1&query=Calle+Pedro+G%C3%B3mez+Chaix+3+M%C3%A1laga"
             target="_blank"
             rel="noopener noreferrer">
-            Abrir en Maps
+            Ver en Google Maps
           </a>
-
         </div>
-      </div>
-    </section>
-
-    <!-- DIRECCIÓN -->
-    <section
-      class="address-section"
-      id="direccion"
-      aria-labelledby="address-title">
-
-      <div class="container">
-        <p class="eyebrow">
-          Donde estamos
-        </p>
-
-        <h2 id="address-title">
-          Calle Pedro Gómez Chaix, 3
-        </h2>
-
-        <p class="address-city">
-          Cruz de Humilladero, Málaga
-        </p>
-
-        <a
-          class="button button-map"
-          href="https://www.google.com/maps/search/?api=1&query=Calle+Pedro+Gómez+Chaix+3+Málaga"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Ver Miga Urbana en Google Maps">
-          Ver en Google Maps
-        </a>
       </div>
     </section>
   </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-content">
+    <div class="footer-content container">
 
-      <!-- LOGO DEL FOOTER -->
+      <!-- LOGO -->
       <a
         class="footer-logo"
-        href="/"
-        aria-label="Miga Urbana, página de inicio">
-
+        href="#inicio"
+        aria-label="Miga Urbana, inicio">
         <img
           class="footer-logo-image"
           src="assets/logo.svg"
@@ -515,9 +346,9 @@
         </span>
       </a>
 
-      <!-- INFORMACIÓN LEGAL -->
+      <!-- LEGAL -->
       <p class="footer-legal">
-        Pan hecho de verdad · Málaga © 2026
+        © 2026 Miga Urbana · Panadería vegana
       </p>
 
       <!-- INSTAGRAM -->
@@ -526,15 +357,15 @@
         href="https://www.instagram.com/migaurbana/"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Visita el Instagram de Miga Urbana">
-
+        aria-label="Instagram de Miga Urbana"
+      >
         <img
           class="instagram-icon"
           src="assets/icons/instagram.svg"
           alt=""
           width="20"
-          height="20">
-
+          height="20"
+        >
         <span>
           @migaurbana
         </span>
