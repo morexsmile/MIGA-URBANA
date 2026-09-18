@@ -24,78 +24,69 @@
 </head>
 
 <body>
-  <!-- HEADER -->
+<!-- HEADER -->
+<header class="site-header">
+  <div class="navbar container">
 
-  <header class="site-header">
-    <div class="navbar container">
+    <!-- LOGO -->
+    <a class="logo" href="#inicio" aria-label="Miga Urbana, inicio">
+      <img
+        class="logo-image"
+        src="assets/logo.svg"
+        alt=""
+        width="40"
+        height="40">
+      <span class="logo-text">
+        MIGA URBANA
+      </span>
+    </a>
 
-      <!-- LOGO -->
-      <a class="logo" href="#inicio" aria-label="Miga Urbana, inicio">
-        <img
-          class="logo-image"
-          ="assets/logo.svg"
-          alt=""
-          width="40"
-          height="40">
+    <!-- NAVEGACIÓN -->
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul class="nav-list">
+        <li>
+          <a href="#productos">Productos</a>
+        </li>
+        <li>
+          <a href="#historia">Nuestra historia</a>
+        </li>
+      </ul>
+    </nav>
 
-        <span class="logo-text">
-          MIGA URBANA
-        </span>
-      </a>
+    <!-- BOTÓN -->
+    <a class="button button-primary" href="#visitanos">
+      Ven a vernos
+    </a>
 
-      <!-- NAVEGACIÓN -->
-      <nav class="main-nav" aria-label="Navegación principal">
-        <ul class="nav-list">
-          <li>
-            <a href="#productos">Productos</a>
-          </li>
-
-          <li>
-            <a href="#historia">Nuestra historia</a>
-          </li>
-
-          <li>
-            <a href="#visitanos">Visítanos</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- BOTÓN -->
-      <a class="button button-primary" href="#visitanos">
-        Ven a vernos
-      </a>
-      
-      <!-- MENÚ MÓVIL -->
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Abrir menú"
-        aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
 
     <!-- MENÚ MÓVIL -->
-    <div class="mobile-menu" hidden>
-      <nav aria-label="Navegación móvil">
-        <ul class="mobile-nav-list">
-          <li>
-            <a href="#productos">Productos</a>
-          </li>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Abrir menú"
+      aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
 
-          <li>
-            <a href="#historia">Nuestra historia</a>
-          </li>
 
-          <li>
-            <a href="#visitanos">Visítanos</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <!-- MENÚ MÓVIL -->
+  <div class="mobile-menu" hidden>
+    <nav aria-label="Navegación móvil">
+      <ul class="mobile-nav-list">
+        <li>
+          <a href="#productos">Productos</a>
+        </li>
+
+        <li>
+          <a href="#historia">Nuestra historia</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   <main id="inicio">
 
@@ -361,7 +352,7 @@
       >
         <img
           class="instagram-icon"
-          src="assets/icons/instagram.svg"
+          src="assets/instagram.svg"
           alt=""
           width="20"
           height="20"
